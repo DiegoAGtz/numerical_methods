@@ -1,0 +1,1 @@
+clear;clc;# A = [3 1 2; -2 -1 0; -1 0 -3];A = [5 -2 0; -2 3 -1; 0 -1 1];y = [1; 0; 0];A_3 = A^3 * y;A_2 = A^2 * y;A_1 = A * y;SE = [A_2 A_1 y]SOL = -A_3coef = bicg(SE, SOL);disp(coef);
